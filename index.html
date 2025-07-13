@@ -28,6 +28,8 @@
         <label style="height: 20px;">CSCM Certification<input type="checkbox" id="cert2" > </label>
         <label style="height: 20px;">CSCM Level 2 Certification<input type="checkbox" id="cert4" > </label>
         <label style="height: 20px;">Fellow Certification<input type="checkbox" id="cert3" > </label>
+                <label style="height: 20px;">Dunsborough Yallingup Chamber of Commerce<input type="checkbox" id="cert5" > </label>
+
         <h2 style="margin-top: 100px;">Step 2: Generate Signature</h2>
         <button type="button" onclick="updateSignature()">Generate Signature</button>
 
@@ -53,6 +55,7 @@
             let cert2 = document.getElementById('cert2').checked ? '<td><img src="https://jdstrata.com.au/wp-content/uploads/2025/03/email-cscm-cert.png" width="150" style="display: inline"><p style="display: inline"> </p></td>' : '';
             let cert3 = document.getElementById('cert3').checked ? '<td><img src="https://jdstrata.com.au/wp-content/uploads/2025/03/email-fscm-cert.png" width="150" style="display: inline"><p style="display: inline"> </p></td>' : '';
             let cert4 = document.getElementById('cert4').checked ? '<td><img src="https://jdstrata.com.au/wp-content/uploads/2025/03/email-cscm-cert-lvl2.png" width="150" style="display: inline"><p style="display: inline"> </p></td>' : '';
+            let cert5 = document.getElementById('cert5').checked ? '<td><img src="https://jdstrata.com.au/wp-content/uploads/2025/07/member-2025.webp" width="150" style="display: inline"><p style="display: inline"> </p></td>' : '';
 
             let signature = `
                 <table max-width="900px" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, sans-serif; display: inline-block; font-size: 14px; color: #000; border-collapse: collapse;">
@@ -81,7 +84,7 @@
                 </table>
                 <br>
                 <table>
-                           <tr> ${cert1} ${cert2} ${cert3} ${cert4}</tr>
+                           <tr> ${cert1} ${cert2} ${cert3} ${cert4} ${cert5}</tr>
                         </table>
             `;
             
